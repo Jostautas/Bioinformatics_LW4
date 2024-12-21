@@ -1,0 +1,34 @@
+Tikslas: pasiūlyti minimalų probių (angl. probes) rinkinį koronavirusų diagnostikai, užtikrinant, kad probės aptiktų kuo įvairesnius koronavirusus.
+
+1. Sekų atranka:
+   - Naudokite S baltymo DNR sekas iš ankstesnės užduoties, atlikdami šiuos veiksmus:
+     - Išsaugokite tik tas sekas, kurios atitinka šikšnosparnių virusus.
+     - Nepamirškite įtraukti COVID-19 sekos.
+     - Pašalinkite visas sekas, kurių ilgis yra trumpesnis nei 80% ilgiausios sekos.
+
+2. Sekų palyginimas:
+   - Atlikite daugybinį sekų palyginimą naudodami MAFFT. Jei MAFFT netinka dėl didelės sekų apimties, naudokite BLAST.
+
+3. Probių parinkimas:
+   - Sukurkite algoritmą, kuris sugeneruotų minimalų probių rinkinį. Algoritmo tikslas – probės turi atitikti maksimalų kiekį sekų.
+   - Probės parinkimo sąlygos:
+     - Kiekvienos probės ilgis turi būti tinkamas qPCR analizei: nuo 35 iki 40 bp.
+     - Bendras probės parinkimo regionas turi būti ne didesnis nei 80 bp (atsižvelkite į medianą, išmetus tarpus).
+     - Probė laikoma tinkama detekcijai, jei ji turi ne daugiau nei du nukleotidų nesutapimus su sekos atitinkama dalimi.
+
+4. Įgyvendinimas:
+   - Algoritmą realizuokite jums patogia programavimo kalba.
+   - Įvestis: daugybinis sekų palyginimas.
+   - Išvestis: minimalus probių rinkinys (kiekviena probė ir atitinkamų sekų sąrašas).
+
+
+Pastabos:
+
+1. Pradinio rinkinio dydis:
+   - Nurodykite, kiek sekų sudaro pradinis rinkinys. Jei pradinės sekos per didelės apimties, galite naudoti mažesnį rinkinį.
+
+2. Algoritmo kompleksiškumas:
+   - Paaiškinkite, koks yra sukurtos metodikos laiko ir atminties sąnaudų sudėtingumas (kompleksiškumas).
+
+3. Rekomendacijos esant didesniam duomenų kiekiui:
+   - Pateikite siūlymus, kaip algoritmą pritaikytumėte, jei sekų skaičius būtų 10 kartų didesnis.
